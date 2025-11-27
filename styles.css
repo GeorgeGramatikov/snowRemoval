@@ -1,0 +1,319 @@
+/* Reset some basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  
+}
+
+
+.main-nav {
+  background: #222;
+  text-align: center;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 2rem;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+
+/* Animation border */
+.nav-item.animate-border {
+  animation: redBorder 0.4s ease-out forwards;
+}
+
+/* Keyframes for red border animation */
+@keyframes redBorder {
+  0% {
+    border-color: transparent;
+    box-shadow: 0 0 0 rgba(255, 0, 0, 0);
+  }
+  50% {
+    border-color: red;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+  }
+  100% {
+    border-color: red;
+    box-shadow: 0 0 3px rgba(255, 0, 0, 1);
+  }
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.site-header {
+  background: #222;
+  color: white;
+  padding: 1rem 0;
+}
+
+.site-header .logo {
+  height: 50px;
+  vertical-align: middle;
+}
+
+.nav {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.nav a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.call-to-action {
+  text-align: right;
+  margin-top: -50px;
+}
+
+.call-to-action p {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.call-to-action .phone {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  /*background: #f0f0f0;
+  padding: 3rem 0;
+  text-align: center;*/
+ padding: 3rem 0;
+ text-align: center;
+ background-image: url(siteImage/path.jpeg); 
+ background-size: cover;
+ 
+ height: 500px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-list {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.hero-list li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+
+.btn {
+  margin-left: 310px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.phone-section {
+  margin-left: 320px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.phone-section input {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.btn2 {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Intro */
+.intro {
+  padding: 2rem 0;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  margin-bottom: 1rem;
+}
+
+/* Services */
+.services {
+  background: #fafafa;
+  padding: 2rem 0;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.service-item {
+  background: white;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 200px;
+  flex: 1 1 200px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 2rem 0;
+}
+
+.testimonials h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial {
+  margin-bottom: 1.5rem;
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+blockquote {
+  background: #eee;
+  padding: 1rem;
+  border-left: 4px solid #007BFF;
+  font-style: italic;
+}
+
+/* Quote Form */
+.quote-form {
+  background: #f0f0f0;
+  padding: 2rem 0;
+}
+
+.quote-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.quote-form form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.quote-form label {
+  display: block;
+  font-weight: bold;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.quote-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* Footer */
+.site-footer {
+  background: #222;
+  color: white;
+  padding: 2rem 0;
+}
+
+.site-footer .footer-info,
+.site-footer .footer-nav,
+.site-footer .social-icons {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.site-footer a:hover {
+  
+  color: white;
+}
+
+.site-footer .credit {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+#Facebook {
+  width: 25px;
+}
+
+#insta {
+  width: 25px;
+}
+
+
